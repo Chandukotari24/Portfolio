@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2680fea075.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1 class="logo">CHANDU.</h1>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>UI Developer</p>
+                    <h1>Hi, I'm <span>Chandu</span> Kotari<br>From India</h1>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="chandu image 1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a recent graduate with a strong foundation in UI front-end development and data science, I am eager to apply my skills and
+                            knowledge to contribute to innovative projects. My proficiency in user interface and user experience design, coupled with my
+                            analytical abilities in data science, make me a versatile candidate ready to tackle complex challenges and deliver user-centric
+                            solutions. I am committed to continuous learning and am excited to embark on a career that allows me to blend creativity with datadriven insights to drive impactful results
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Mern Stack</span><br>Developing Web/app interfaces</li>
+                                    <li><span>Data Science</span><br>Cleaning Data And Model Building</li>
+                                    <li><span>A/B Testing</span><br>Testing The A/B Web/app interfaces</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2022 - current</span><br>Junior Analyst in Ai Variant</li>
+                                    <li><span>2022 - 2022-august</span><br>DataScientist Virtual intern in Accenture</li>
+                                    <li><span>2021 - 2022</span><br>Worked on Real World Projects from T-Hub institute Kakinada</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022-july - 2023-november</span><br>Participated in Masters Program of Data Science in ExcelR institute</li>
+                                    <li><span>2019 - 2022</span><br>Bachelors from Aditya College of Engineering Surampalem</li>
+                                    <li><span>2015 - 2018</span><br>Diploma from Rajamahendri institute of Engineering and Technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>UI/UX Developer</h2>
+                            <p>Creating a map of the website's structure to ensure intuitive navigation.Placing images,
+                               logos, text, videos, applications and other elements. Using coding languages, such as HTML
+                               and CSS, to create layouts and to style pages.Making optimized versions of website and pages
+                               both for desktop and mobile viewing.</p>
+                               <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-hotel"></i>
+                            <h2>Model Building</h2>
+                            <p>
+                               Undertaking data collection, preprocessing and analysis
+                               Building models to address business problem Presenting
+                               information using data visualization techniques. and Building
+                               the model according to the requirement and making predictions 
+                               on that bussiness stratagies which makes successfull for
+                               bussiness insights and growth.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <h2>A/B Testing</h2>
+                            <p>
+                                A/B testing is essentially an experiment where two or more variants of a page are
+                                shown to users at random, and statistical analysis is used to determine which variation
+                                performs better for a given conversion goal.and these A/B testing is performed for both
+                                App/web interfaces to know the better design between multiple App/Web interfaces.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="container">
+                    <h1 class="sub-title">Projects</h1>
+                    <div class="projects-list">
+                        <h1 class="my-projects">UI Front End Projects:</h1>
+                        <h3 class="h">Mathematics Tutorials Website (HTML5 & CSS3):</h3>
+                        <p>"An interactive mathematics tutorials website utilizing HTML5 and CSS3, offering comprehensive lessons and exercises for students of all levels."
+                        </p>
+                        <h3 class="h">Maths Game (HTML, CSS, JavaScript):</h3>
+                        <P>"Engage in mathematical challenges with this interactive game! Test your skills withdynamic equations and compete for high scores.
+                        </P>
+                        <h3 class="h">App Landing Page(HTML, CSS, Bootstrap):</h3>
+                        <p>"Introduce your app with style! Craft a sleek and responsive landing page using HTML,CSS, andBootstrap,showingapp's features and enticing visitors to explore further."   
+                        </p>
+                        <h3 class="h">Company Website(HTML, CSS & Bootstrap):</h3>
+                        <p>Designed a Company Website for the clients to get in touch with the management for any of the business related queries or project related discussions.
+                        </p>
+                        <h3 class="h">Portfolio Website(HTML, CSS, BootStrap, JavaScript):</h3>
+                        <p> "Craft a dynamic showcase of your skills and accomplishments with a professional portfolio website built using HTML, CSS, Bootstrap, and JavaScript."
+                        </p>
+                        <h3>StopWatch App(HTML, CSS, BootStrap, JQuery):</h3>
+                        <P>"Developed a sleek and functional stopwatch application using HTML, CSS, jQuery, and Bootstrap for professional project showcasing."
+                        </P>
+                        <h3>Drawing App(HTML, CSS, BootStrap, JQuery UI, Canvas, Local Storage):</h3>
+                        <p>"Build a versatile drawing application leveraging HTML, CSS, jQuery UI, Canvas, and Local Storage, perfect for professional project demonstration."
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>kotarichanduvenkatdinesh@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7993536183</p>
+                        <div class="social-websites">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                            <a href="c:\Users\venka\Downloads\Chandu-Kotari.Mern-Resume.pdf" download class="btn btn-1">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn-2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <p>copy-right © Chandu.<i class="fa-solid fa-heart"></i></p>
+            </div>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemenu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemenu.style.right ="-200px";
+                }
+            </script>
+            </body>
+            </html>
